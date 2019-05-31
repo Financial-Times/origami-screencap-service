@@ -4,3 +4,7 @@
 	max-width: 600px;
 	margin: 0 auto 48px auto;
 }
+
+.o-header-services__logo{
+	background-image: url(https://www.ft.com/__origami/service/image/v2/images/raw/ftlogo-v1:origami?format=svg&source=origami&width=55);
+}
