@@ -4,7 +4,7 @@
 	"systemCode": "origami-screencap-service",
 	"purpose": "Capture web pages as images.",
 	"audience": "internal",
-	"primaryUrl": "https://screencap.in.ft.com/",
+	"primaryUrl": "https://origami-screencap.ft.com/",
 	"serviceTier": "bronze",
 	"apiVersion": 1,
 	"apiVersions": [
