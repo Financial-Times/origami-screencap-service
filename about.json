@@ -42,7 +42,7 @@
 			"description": "Heroku dashboard (QA)"
 		},
 		{
-			"url": "https://dashboard.heroku.com/pipelines/TODO",
+			"url": "https://dashboard.heroku.com/pipelines/686b97d7-d91b-497c-b7c4-12799597bc93",
 			"category": "deployment",
 			"description": "Heroku dashboard (QA > Production pipeline)"
 		},
