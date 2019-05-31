@@ -8,8 +8,68 @@
 
 <div class="o-layout__main o-layout-typography">
 
-	<h2>TODO</h2>
+	<form class="capture-form" action="{{@root.basePath}}v1/capture" method="get" enctype="application/x-www-form-urlencoded">
 
-	<p>Put some more information here.</p>
+		<h2>Try it out</h2>
+
+		<label class="o-forms-field">
+			<span class="o-forms-title">
+				<span class="o-forms-title__main">URL</span>
+				<span class="o-forms-title__prompt">The page you'd like to capture</span>
+			</span>
+			<span class="o-forms-input o-forms-input--text">
+				<input type="text" name="url" value="https://www.ft.com/" required/>
+			</span>
+		</label>
+
+		<label class="o-forms-field">
+			<span class="o-forms-title">
+				<span class="o-forms-title__main">System</span>
+				<span class="o-forms-title__prompt">Which system is using this? Must be a valid <a href="https://biz-ops.in.ft.com/search">system code</a></span>
+			</span>
+			<span class="o-forms-input o-forms-input--text">
+				<input type="text" name="source" value="origami" required/>
+			</span>
+		</label>
+
+		<div class="o-forms-field" role="group" aria-labelledby="capture-dimensions">
+			<span class="o-forms-title" aria-hidden="true">
+				<span class="o-forms-title__main" id="capture-dimensions">Viewport dimensions</span>
+				<span class="o-forms-title__prompt">With a minumum of 200 and a maximum of 5120</span>
+			</span>
+			<span class="o-forms-input o-forms-input--text o-forms-input--inline">
+				<label>
+					<span class="o-forms-input__label" aria-hidden="true">
+						Width
+					</span>
+					<input type="text" name="viewportWidth" value="1200" aria-label="Width" required/>
+				</label>
+				<label>
+					<span class="o-forms-input__label" aria-hidden="true">
+						Height
+					</span>
+					<input type="text" name="viewportHeight" value="800" aria-label="Height" required/>
+				</label>
+			</span>
+		</div>
+
+		<div class="o-forms-field o-forms-field--optional" role="group" aria-labelledby="toggles" aria-describedby="toggles-prompt">
+			<span class="o-forms-title" aria-hidden="true">
+				<span class="o-forms-title__main" id="toggles">Toggles</span>
+				<span class="o-forms-title__prompt" id="toggles-prompt">Some extra switches to change your screen capture</span>
+			</span>
+			<span class="o-forms-input o-forms-input--toggle">
+				<label>
+					<input type="checkbox" name="default" value="Stacked 1" aria-label="Capture the full page rather than the viewport"/>
+					<span class="o-forms-input__label" aria-hidden="true">
+						Capture the full page rather than the viewport
+					</span>
+				</label>
+			</span>
+		</div>
+
+		<input type="submit" class="o-buttons o-buttons--primary o-buttons--big" value="Capture!"/>
+
+	</form>
 
 </div>
