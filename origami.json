@@ -1,0 +1,13 @@
+{
+	"description": "Capture web pages as images",
+	"origamiType": "service",
+	"origamiVersion": 1,
+	"keywords": [],
+	"support": "https://github.com/Financial-Times/origami-screencap-service/issues",
+	"supportStatus": "active",
+	"supportContact": {
+		"email": "origami.support@ft.com",
+		"slack": "financialtimes/ft-origami"
+	},
+	"serviceUrl": "https://screencap.in.ft.com/"
+}

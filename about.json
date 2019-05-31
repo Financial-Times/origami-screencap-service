@@ -1,0 +1,55 @@
+{
+	"schemaVersion": 1,
+	"name": "Origami ScreenCap Service",
+	"systemCode": "origami-screencap-service",
+	"purpose": "Capture web pages as images.",
+	"audience": "internal",
+	"primaryUrl": "https://screencap.in.ft.com/",
+	"serviceTier": "bronze",
+	"apiVersion": 1,
+	"apiVersions": [
+		{
+			"path": "/v1",
+			"supportStatus": "active"
+		}
+	],
+	"dateCreated": "2019-05-31",
+	"contacts": [
+		{
+			"name": "Origami team",
+			"email": "origami.support@ft.com",
+			"rel": "owner",
+			"domain": "All support enquiries"
+		}
+	],
+	"links": [
+		{
+			"url": "https://github.com/Financial-Times/origami-screencap-service/issues",
+			"category": "issues"
+		},
+		{
+			"url": "https://github.com/Financial-Times/origami-screencap-service",
+			"category": "repo"
+		},
+		{
+			"url": "https://dashboard.heroku.com/apps/origami-screencap-service-eu",
+			"category": "deployment",
+			"description": "Heroku dashboard (Production EU)"
+		},
+		{
+			"url": "https://dashboard.heroku.com/apps/origami-screencap-service-qa",
+			"category": "deployment",
+			"description": "Heroku dashboard (QA)"
+		},
+		{
+			"url": "https://dashboard.heroku.com/pipelines/TODO",
+			"category": "deployment",
+			"description": "Heroku dashboard (QA > Production pipeline)"
+		},
+		{
+			"url": "https://github.com/Financial-Times/origami-screencap-service#readme",
+			"category": "documentation",
+			"description": "README"
+		}
+	]
+}

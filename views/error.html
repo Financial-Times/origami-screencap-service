@@ -1,0 +1,13 @@
+<h1 class="component-header">
+	{{title}}
+</h1>
+
+{{#if error.isValidationError}}
+	<ul>
+		{{#error.details}}
+			<li>{{message}}</li>
+		{{/error.details}}
+	</ul>
+{{else}}
+	<p>{{error.message}}</p>
+{{/if}}
